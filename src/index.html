@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Breeds</title>
+    <meta name="description" content="Dog Breeds">
+
+    <!-- CDN font-family default -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+        <div class="container">
+                <header>
+                        <div class="header__title">
+                                <h1>Dog Breeds</h1>
+                        </div>
+                </header>
+               
+                <section>
+                        <div class="form__dogs">
+                                <div class="form__container flex flex__wrap">
+                                        <div class="form__boxes form__box-left">
+                                                
+                                                <picture>
+                                                        <img src="assets/images/dog.png" alt="dog" class="dog__image">
+                                                        <span class="dogs__name-img"></span>
+                                                </picture>
+                                          
+                                        </div>
+
+                                        <div class="form__boxes form__box-right">
+                                                <input type="text" placeholder="Dog's Name" class="dogs-name" id="dogname-input">
+                                                <div class="form__select">
+                                                        <select name="fontstyle" id="dogfont-select">
+                                                                <option value="default" selected hidden>Choose a font</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form__select">
+                                                        <select name="dogbreed" id="dogbreed-select">
+                                                                <option value="default" selected hidden>Choose a dog breed</option>
+                                                        </select>
+                                                </div>
+                                            
+                                                <div class="form__select">
+                                                        <select name="colorstyle" id="dogname-color">
+                                                                <option value="default" selected hidden>Choose a color</option>
+                                                                <option value="red">Red</option>
+                                                                <option value="blue">Blue</option>
+                                                                <option value="yellow">Yellow</option>
+                                                                <option value="orange">Orange</option>
+                                                                <option value="purple">Purple</option>
+                                                        </select>
+                                                </div>
+                                                
+                                                <button type="button" class="form__button button-cancel" id="reset-button">Clear</button>
+                                                <button type="button" class="form__button" id="save-button">Save</button>
+                                                <span class="form__msg-error"><span>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <section>
+                        <div class="dogs">
+                                <span class="dogs__title">My Storaged Dogs</span>
+                                <span class="dogs__msg-empty">You don't have dogs. Please add new dogs :)</span>
+                                <ul class="dogs__storage">
+                                        <li class="dogs__storage-item dogs__storage--example">
+                                                <picture>
+                                                        <img src="{dog-image}" alt="{dog-breed}">
+                                                </picture>
+                                                <div class="dogs__storage-col">
+                                                        <span class="dogs__storage-name" data-color="{dog-color}" data-font="{dog-font}">{dog-name}</span>
+                                                        <span class="dogs__storage-breed">{dog-breed}</span>
+                                                        <span class="dogs__storage-dateAndHour">{dog-dateAndHour}</span>
+                                                </div>
+                                        </li>
+                                </ul>
+                        </div>
+                </section>
+        </div>
+ 
+    <!-- CDN JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
